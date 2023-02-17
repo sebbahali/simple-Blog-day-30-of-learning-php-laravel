@@ -1,0 +1,345 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #ececec;
+	font-family: sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.login-box,
+.signup-box {
+	background: #fff;
+	padding: 50px;
+	box-shadow: 0px 0px 10px #555;
+	border-radius: 10px;
+}
+
+.login-box {
+	margin-right: 20px;
+}
+
+h2 {
+	font-size: 28px;
+	margin-bottom: 20px;
+	color: #333;
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+.user-box {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.user-box input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #333;
+	border: none;
+	border-bottom: 2px solid #ddd;
+	outline: none;
+	background: transparent;
+}
+
+.user-box label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 16px;
+	color: #999;
+	pointer-events: none;
+	transition: 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+	top: -20px;
+	left: 0;
+	color: #333;
+	font-size: 14px;
+}
+
+a {
+	display: inline-block;
+	position: relative;
+	color: #fff;
+	background: #4CAF50;
+	border: none;
+	border-radius: 30px;
+	padding: 10px 20px;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	overflow: hidden;
+	margin-top: 20px;
+}
+
+a:hover {
+	background: #3e8e41;
+}
+
+a span {
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	transform: scaleX(0);
+	transform-origin: right;
+	background: #333;
+	transition: transform 0.5s ease-in-out;
+}
+
+a:hover span {
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+.login-box input[type="submit"],
+.signup-box input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.login-box input[type="submit"]:hover,
+.signup-box input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+.signup-box {
+	background-color: #f2f2f2;
+}
+
+.signup-box input[type="text"],
+.signup-box input[type="email"],
+.signup-box input[type="password"] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.signup-box label {
+	margin-bottom: 10px;
+	display: block;
+	font-weight: bold;
+	color: #333;
+}
+
+.signup-box input[type="text"]:focus,
+.signup-box input[type="email"]:focus,
+.signup-box input[type="password"]:focus {
+	border: 2px solid #4CAF50;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-info span {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+ 
+  
+  
+  
+  
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  main {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #create-post {
+    width: 30%;
+  }
+  
+  #create-post h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #create-post form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #create-post label {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  #create-post input[type="text"],
+  #create-post textarea {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #create-post textarea {
+    height: 200px;
+  }
+  
+  #create-post button[type="submit"] {
+    font-size: 18px;
+    background-color: #ff975a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #create-post button[type="submit"]:hover {
+    background-color: #ffdc41;
+  }
+  
+  #posts {
+    width: 68%;
+  }
+  
+  #posts h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #posts-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post {
+    border: 1px solid #b9ffa4;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .post-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .post-body {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .post-author {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .comments-list {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  
+  .comment {
+    border: 1px solid #5fff8f;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .comment-text {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .comment-author {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .post-comments {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #posts form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #posts label {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  #posts textarea {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #7bcff7;
+    height: 100px;
+  }
+  
+  #posts button[type="submit"] {
+    font-size: 18px;
+    background-color: #c58a09;
+    color: #ff8686;
+    padding: 10px 
+  }  
+  
